@@ -1,0 +1,53 @@
+/* Fonts are used: Barlow,Baloo Da\ 2,sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500&display=swap');
+
+
+
+/* Style for the dynamic text */
+body {
+    font-family: 'Baloo Da 2',sans-serif;
+}
+
+.intro {
+
+    position: relative;
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+.fixed {
+    color: red;
+}
+
+.typing {
+    position: relative;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    border-right: 2px solid black;
+    animation: blink 0.7s infinite ease;
+    text-align: center;
+    font-weight: 100;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Dynamic text ends here */

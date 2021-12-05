@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dyanmic Text</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .intro {
+
+            position: relative;
+            display: block;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .fixed {
+            color: red;
+        }
+
+        .typing {
+            position: relative;
+            margin-left: 5px;
+            text-align: center;
+        }
+
+        .typing::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 80%;
+            border-right: 2px solid black;
+            animation: blink 0.5s infinite ease;
+            text-align: center;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        <!-- <h1 class="fixed">Hello I am </h1> -->
+        <h1 class="typing"></h1>
+    </div>
+
+    <script>
+        const texts = [
+            "Hello I am",
+            "Syed Faysel Ahammad Rajo.",
+            "A junior", "Web developer.",
+            "Studying at BracU", "Website under construction","Life under construction"
+        ];
+        let count = 0;
+        let index = 0;
+        currentText = "";
+        let letter = "";
+
+        (function type() {
+            if (count === texts.length) {
+                count = 0;
+            }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.querySelector(".typing").textContent = letter;
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0;
+            }
+            setTimeout(type, 150);
+            // setInterval(type, 1000)
+        })();
+
+    //   function func() {
+    //     console.log("Ran");
+    //   }
+    //   setInterval(func, 1000); //Runs the "func" function every second
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Texts:
+    Hello  I am Syed Faysel Ahammad Rajo. A junior Web developer. 
+ -->
