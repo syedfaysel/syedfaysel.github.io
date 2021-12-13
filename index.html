@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syed Faysel | Home</title>
+    <title>Syed Faysel Ahammad Rajo</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/Official Faysel Favicon.svg">
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css">
+    
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,15 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap"
       rel="stylesheet"
     />
+
   </head>
 
   <body>
-      <!-- Header -->
-    <div class="header">
-       
-        <object data="Assests/Faysel google logo.svg" width="125px" height="50px"> </object>
-        
-    </div>
+     
+    <nav>
+        <label class="logo"><object data="Assets/Faysel google logo.svg" width="120px" height="45px"> </object></label>
+        <ul>
+            <li><a class="active" href="#"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/50-projects">Projects</a></li>
+            <li><a href="mailto:sfa.rajo20@gmail.com">Contact</a></li>
+            <li><a href="https://facebook.com/syedfaysel" target="_blank">Facebook</a></li>
+            <li><a href="https://blog.syedfaysel.me" target="_blank">Blog  <i class="fab fa-blogger"></i></a></li>
+   
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
     <!-- Daynamic text -->
     <div class="intro">
         
@@ -31,59 +45,77 @@
     </div>
     
 
-        <!-- Body -->
-        <section class="main">
-            
-            <div class="menu">
+    <!-- Body -->
 
-            </div>
-  
-            <div class="main-body">
-                <div>
-                    <object class="svgflip" data="Assests/Asset 2.svg" width="100%" height="400"> </object>
-                    <object data="Assests/Asset 2.svg" width="100%" height="400"> </object>
+    <div class="main-body">
+        <div class="hero">
+            <img src="Assets/Official Faysel Favicon.svg" width="100%" height="400"> </img>
+            <a href="https://dr.syedfaysel.me" target="_blank">
+                <img src="Assets/Dr Faysel.svg" width="100%" height="400"> </img>
+            </a>
+             <br>
+
+        </div> 
+    </div>
+
+    <!-- Project Section -->
+    <div class="project">
+        <a href="/50-projects" style="text-decoration:none"><h2>Visit Projects</h2></a>
+       
+    </div>
+
+    <div class="bottom">
+        <div class="column" id="profile">
+            <img src="Assets/Vlog Profile.jpg" alt="Syed Faysel">
+         </div>
+        <div id="about" class="column">
+            <h3>Who the Hell I am!</h3>
+            <p>
+                Hi, I am Syed Faysel Ahammad Rajo, a Bangladesh based content creator, youtuber, influencer, blog and article-writer, photographer and so on.Gonna be a Doctor & Engineer. Along the way, I've surfed some more academic sector like Medical and Life science, Business Study and Law. But I've come to explore more on Science & Technology. I love to spread knowledge and whatever I learned or explored in my life.You probably see two versions (Doctor X Engineer) of mine. Get my Engineer version here
+            </p>
+        </div>
+        
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="#">      
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                    <div>&copy; Syed Faysel | 2022</div>
                 </div>
-                
-            </div>
-           
-        </section><br>
-
-        <!-- Project Section -->
-        <section class="project">
-            <a href="/50-projects" style="text-decoration:none"><h2>Visit Projects</h2></a>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="nav-wrapper">
-
-                <!-- Link around dots-wrapper added after tutorial video -->
-                <a href="index.html">      
-                    <div class="dots-wrapper">
-                        <div id="dot-1" class="browser-dot"></div>
-                        <div id="dot-2" class="browser-dot"></div>
-                        <div id="dot-3" class="browser-dot"></div>
-                        <div>&copy; Syed Faysel | 2021</div>
-                    </div>
-                </a>
-                
-
-                <ul id="navigation">
-                    <li>
-                        <a href="index.html">
-                            <object data="Assests/Faysel google logo.svg" width="84px" height="33px"></object>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </footer>
+            </a>
+            
+            <ul id="navigation">
+                <li>
+                    <a href="https://dr.syedfaysel.me" target="_blank">
+                        <img src="Assets/Dr Faysel.svg" width="30px" height="30px"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="Assets/Official Faysel Favicon.svg" width="30px" height="30px"></img>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
   </body>
   <script src="dynamictext.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- Menu Bar Script -->
+  <Script>
+      $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+  </Script>
+
 </html>
 
