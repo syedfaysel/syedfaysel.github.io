@@ -7,8 +7,9 @@
     
     <!-- ===================UNICONS==================== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- ==================SWIPER CSS================== -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- ==================SWIPER CSS CDN ================== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <!-- ====================CSS==================== -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -702,10 +703,10 @@
             <h2 class="section_title">Portfolio</h2>
             <span class="section_subtitle">Some of my works</span>
 
-            <div class="portfolio_container container">
-                <div>
+            <div class="portfolio_container container swiper">
+                <div class="swiper-wrapper">
                      <!-- ----------- PORTFOLIO Item 1 --------------->
-                     <div class="portfolio_content grid">
+                     <div class="portfolio_content grid swiper-slide">
                         <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -720,7 +721,7 @@
                         </div>
                      </div>
                      <!-- ----------- PORTFOLIO Item 2 --------------->
-                     <div class="portfolio_content grid">
+                     <div class="portfolio_content grid swiper-slide">
                         <img src="./assets/images/portfolio2.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -735,7 +736,7 @@
                         </div>
                      </div>
                      <!-- ----------- PORTFOLIO Item 3 --------------->
-                     <div class="portfolio_content grid">
+                     <div class="portfolio_content grid swiper-slide">
                         <img src="./assets/images/portfolio3.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -753,6 +754,16 @@
                      <!-- ----------- PORTFOLIO Item 5 --------------->
 
                 </div>
+
+                <!--  Arrow -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!--  pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -806,8 +817,8 @@
     <a href="#" class="scroll_up" id="scroll-up">
         <i class="uil uil-arrow-up scroll_up-icon"></i>
     </a>
-    <!-- ===================SWIPER JS================== -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- ===================SWIPER JS CDN================== -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- ===================Main JS==================== -->
     <script src="./assets/js/main.js"></script>
 </body>

@@ -806,7 +806,25 @@ img{
     transform: translateX(.25rem);
 }
 
+/* Swiper */
 
+.swiper-button-pre::after,
+.swiper-button-pre::after{
+    content: '';
+}
+
+.swiper-portolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swipter-button-prev{
+    left: -.5rem;
+}
+
+.swipter-button-next{
+    right: -.5rem;
+}
 
 
 /* ================  Portfolio ===================== */
